@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'LINESeedKR-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/LINESeedKR-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.App {
+  text-align: center;
+}
+
+.tab_wrap {
+  width: 60%;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid rgb(181, 181, 181);
+
+  .select_tab {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  
+    .ant-select-selector {
+      border-radius: 5px;
+    }
+    
+    li {
+      cursor: pointer;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(196, 196, 196);
+      border-right: 1px solid rgb(212, 212, 212);
+      font-family: 'LINESeedKR-Bd';
+      font-size: 23px;
+      font-weight: 100;
+    
+      &:last-child {
+        border-right: none;
+      }
+    
+      &.on {
+        font-weight: bold;
+        color: rgb(136, 132, 216);
+        font-size: 25px;
+      }
+    }
+    
+  }
+}
+
+.chart {
+
+  .recharts-wrapper {
+    margin: 20px auto;
+  }
+  
+}
+
+.chartName {
+  margin-top: -50px;
+  font-weight: bold;
+  font-size: 18px;
+}
